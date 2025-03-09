@@ -13,58 +13,76 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+# Job Listing Platform
 
-### `npm test`
+## Overview
+This is a full-stack Job Listing Platform built using the MERN stack with Sequelize and PostgreSQL/MySQL. It allows employers to post job listings and job seekers to search and apply for jobs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+- **JWT Authentication & Role-Based Access Control**
+- **CRUD Operations for Jobs**
+- **Search, Sort, Filter, and Pagination**
+- **Bookmark Jobs**
+- **Employer Dashboard for Managing Jobs**
+- **Applicant Dashboard for Tracking Applications**
+- **Admin Panel (Optional) for User & Job Management**
+- **UI/UX Enhancements with Toast Notifications**
+- **Deployment Considerations for Backend & Frontend**
 
-### `npm run build`
+## Tech Stack
+### Frontend
+- React (Class Components)
+- React Router
+- Axios
+- Normal CSS Styling (No UI Libraries)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend
+- Node.js, Express.js
+- Sequelize ORM
+- PostgreSQL/MySQL
+- JWT & Bcrypt for Authentication
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Folder Structure
+```
+├── src
+│   ├── components       # Reusable components
+│   ├── pages            # Page-specific components
+│   │   ├── dashboard    # Employer Dashboard
+│   │   ├── signinpage   # Sign-in Page
+│   │   ├── signuppage   # Sign-up Page
+│   ├── services         # API calls and authentication logic
+│   ├── App.js           # Main App component
+│   ├── index.js         # React entry point
+│
+├── package.json
+├── README.md
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation & Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/job-listing-platform.git
+   ```
+2. Install dependencies:
+   ```sh
+   cd job-listing-platform
+   npm install
+   ```
+3. Start the backend server:
+   ```sh
+   cd backend
+   npm install
+   npm start
+   ```
+4. Start the frontend:
+   ```sh
+   cd frontend
+   npm start
+   ```
 
-### `npm run eject`
+## Contributing
+Feel free to submit issues and pull requests to improve the platform!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
+This project is licensed under the MIT License.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
