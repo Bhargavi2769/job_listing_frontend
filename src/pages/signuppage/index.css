@@ -1,0 +1,137 @@
+/* Adding Background Color for Contrast */
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Centering the Signup Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 80vw;
+  margin: auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 40px;
+  overflow: hidden;
+  background: white;
+}
+
+/* Left Side - Form Container */
+.signup-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 38px;
+  background: white;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+.signup-form-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1px;
+  color: #333;
+}
+
+.signup-form-container p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Styling Form Elements */
+.signup-form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  border-color: #e63946;
+  box-shadow: 0 0 5px rgba(230, 57, 70, 0.5);
+}
+
+/* Button Styling */
+.signup-form button {
+  width: 50%;
+  padding: 10px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-form button:hover {
+  background-color: #c92a34;
+}
+
+/* Sign-in Link Styling */
+.signup-form-container a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-form-container a:hover {
+  text-decoration: underline;
+}
+
+/* Right Side - Background Image */
+.signup-image {
+  flex: 1;
+  background: url("../../assets/sign_image.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Ensuring Both Sides Are Equal */
+.signup-form-container, .signup-image {
+  height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+  }
+
+  .signup-form-container {
+    padding: 30px;
+  }
+
+  .signup-image {
+    height: 200px;
+  }
+}
